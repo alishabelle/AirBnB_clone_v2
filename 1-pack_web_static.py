@@ -10,7 +10,7 @@ def do_pack():
 
     local("mkdir -p versions")
     date = datetime.datetime.now().strftime("%Y%b%d%H%M%S")
-    create = ('versions/web_static_' + 'date' + '.tgz')
+    create = ('versions/web_static_' + date + '.tgz')
     gen = local("tar -cvzf {} web_static".format(create))
 
     if gen:
