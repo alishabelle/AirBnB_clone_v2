@@ -32,7 +32,6 @@ def pyth(text="is cool"):
     return('Python %s' % (text))
 
 
-@app.route('/number/', strict_slashes=False)
 @app.route('/number/<int:n>', strict_slashes=False)
 def num(n):
     """ displays only if n is an int """
