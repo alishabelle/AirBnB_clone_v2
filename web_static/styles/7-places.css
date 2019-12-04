@@ -1,8 +1,10 @@
 .places {
+    width: 100%;
+    position: relative;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: stretch;
     padding: 0 20px;
 }
 .places h1 {
